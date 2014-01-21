@@ -1,6 +1,6 @@
 from string import digits, ascii_uppercase, ascii_lowercase, punctuation
 from math import log
-from random import SystemRandom
+from random import SystemRandom as randy
 
 class PwdGen(object):
 
@@ -16,7 +16,7 @@ class PwdGen(object):
 
 	def newPwd(self, length, strength):
 
-		rand = SystemRandom()
+		rand = randy()
 
 		alphabet = digits
 
